@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/*body {
+    background-color: rgb(19, 18, 18);
+}*/
+
+
+header {
+    background-color: rgb(255, 200, 18);
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-01 {
+    height: 24px;
+    width: 146px;
+    display: flex;
+    justify-content: space-around;
+    padding: 17px 16px 14px 1px;
+
+}
+
+
+.container-02 {
+    height: 33px;
+    width: 520px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: white;
+    border-radius: 24px;
+    padding: 6px 8px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.container-02:focus-within {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+
+.lupa-pesquisa {
+    position: absolute;
+    right: 6px;
+    height: 36px;
+    width: 60px;
+    background: #ffffff;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.teclado-pesquisa {
+    position: absolute;
+    right: 76px;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-03 {
+    height: 34px;
+    width: 130px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    height: 24px;
+    width: 24px
+}
+
+#logo {
+    width: 90px;
+    height: 20px;
+}
+
+#criar {
+    max-width: 24px;
+    max-height: 24px;
+    margin: 15px;
+}
+
+#lupa {
+    display: flex;
+    width: 50px;
+    height: 40px;
+    background-color: rgb(124, 122, 122);
+    border-radius: 0px 30px 30px 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto {
+    width: 34px;
+    height: 34px;
+}
+
+#create {
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 0;
+    margin: 0 8px;
+    transition: transform .08s ease, box-shadow .12s ease;
+}
+
+.create-btn img {
+    width: 18px;
+    height: 18px;
+    display: block;
+}
+
+/* Hover / Active / Focus */
+.create-btn:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+    transform: translateY(-1px);
+}
+
+.create-btn:active {
+    transform: translateY(0);
+}
+
+.create-btn:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.12);
+    outline-offset: 2px;
+}
+
+
+
+
+#pesquisa {
+    background-color: transparent;
+    border: none;
+    height: 36px;
+    /* use flex so input grows inside container */
+    flex: 1;
+    border-radius: 20px;
+    margin: 0;
+    padding: 6px 12px;
+    color: #111;
+    font-size: 15px;
+    /* leave space for the keyboard icon + magnifier (absolute elements) */
+    padding-right: 120px;
+}
+
+/* placeholder color */
+#pesquisa::placeholder {
+    color: #6b6b6b;
+}
+
+.lupa-pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+
+.teclado-pesquisa img {
+    width: 20px;
+    height: 20px;
+}
