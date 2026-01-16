@@ -5,19 +5,23 @@
     color: white;
 }
 
-/*body {
+body {
     background-color: rgb(19, 18, 18);
-}*/
+}
 
 
 header {
-    background-color: rgb(255, 200, 18);
+    background-color:  rgb(245, 222, 179);
     height: 56px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+main {
+    padding: px;
 }
 
 .container-01 {
@@ -36,7 +40,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
-    background: white;
+    background: #ffffff;
     border-radius: 24px;
     padding: 6px 8px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
@@ -44,6 +48,24 @@ header {
 
 .container-02:focus-within {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.container-03 {
+    height: 34px;
+    width: 130px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.container-04 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    border-radius: 24px;
+    padding: 8px 12px;
+    box-shadow: 1px 1px 1px 1px  rgba(255, 253, 253, 0.12);
 }
 
 
@@ -71,14 +93,6 @@ header {
     justify-content: center;
 }
 
-.container-03 {
-    height: 34px;
-    width: 130px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-
 #menu {
     height: 24px;
     width: 24px
@@ -89,11 +103,11 @@ header {
     height: 20px;
 }
 
-#criar, .create-btn {
-    background: rgba(255, 255, 255, 0.1);
+.criar {
+    background-color: rgb(245, 222, 179);
     border: none;
     border-radius: 18px;
-    min-width: 44px;
+    min-width: 50px;
     height: 36px;
     display: inline-flex;
     align-items: center;
@@ -104,7 +118,11 @@ header {
     margin: 0 8px;
 }
 
-#criar img, .create-btn img {
+.criar:hover {
+    background-color: rgb(144, 120, 88);
+}
+
+.criar img {
     width: 16px;
     height: 16px;
     display: block;
@@ -116,6 +134,17 @@ header {
     font-weight: 500;
     line-height: 1;
 }
+
+.lupa-pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+
+.teclado-pesquisa img {
+    width: 20px;
+    height: 11px;
+}
+
 
 #lupa {
     display: flex;
@@ -131,9 +160,6 @@ header {
     width: 34px;
     height: 34px;
 }
-
-
-
 
 #pesquisa {
     background-color: transparent;
@@ -152,12 +178,54 @@ header {
     color: #6b6b6b;
 }
 
-.lupa-pesquisa img {
-    width: 20px;
-    height: 20px;
+#logo-dio {
+    width: 42px;
+    height: 42px;
+    border-radius: 25px;
 }
 
-.teclado-pesquisa img {
-    width: 20px;
-    height: 11px;
+#compartilhar {
+    width: 24px;
+    height: 24px;
+}
+
+.barra-meio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 16px;
+}
+
+#like {
+    width: 24px;
+    height: 24px;
+}
+
+#dislike {
+    width: 24px;
+    height: 24px;
+}
+
+#download {
+    width: 24px;
+    height: 24px;
+}
+
+.botao {
+    background-color: rgb(248, 1, 1);
+    border: none;
+    border-radius: 18px;
+    min-width: 50px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 10px;
+    cursor: pointer;
+    margin: 0 8px;
+}
+
+.botao:hover {
+    background-color: rgb(116, 0, 0);
 }
